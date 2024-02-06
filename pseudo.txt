@@ -1,0 +1,13 @@
+function knightmoves(source, dest)
+
+Node(row, col) - Factory
+    children = []
+    function getEligibleSquares
+        if row - 2 > 0
+        
+
+    return
+        get row
+        get col
+        get children
+        set children([nodeArray])
