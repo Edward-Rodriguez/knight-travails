@@ -79,6 +79,9 @@ let buildGraph = () => {
   return board[0][0]; //setting root node as bottom left square
 };
 
+/**
+ * BFS search graph implementation
+ */
 function knightMoves(start, dest) {
   const board = gameBoard.board;
   let discoveredNodesQueue = [];
