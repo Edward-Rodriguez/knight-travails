@@ -1,4 +1,27 @@
-function knightmoves(source, dest)
+function knightmoves(sourceArr, destArr)
+    const discoveredNodesQueue = []
+    const pathList = []
+    const parentsMap = new Map();
+    const [sourceRow, sourceCol] = sourceArr
+    const [destRow, destCol] = destArr
+    let startNode = gameBoard[sourceRow][sourceCol]
+    const destNode = gameBoard[destRow][destCol]
+    discoveredNodesQueue.push startNode
+    pathList.push([tempNode.row, tempNode.col])
+    while (discoveredNodesQueue.length > 0)
+        let currentNode = discoveredNodesQueue.shift
+        currentNode.children.forEach childNode
+            parentsMap.set(concat(childNode.row, childNode.col), currentNode);
+            if childNode === destNode
+                currentNode = childNode
+                while (currentNode != startNode)
+                    pathList.enque = parentsMap.get(concat(currentNode.row, currentNode.col))
+                return pathList
+            else if not visited
+                discoveredNodesQueue push childNode
+                
+function buildGraph
+   for let i = 0
 
 Node(row, col) - Factory
     children = []
