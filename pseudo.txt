@@ -3,7 +3,7 @@ function knightmoves(source, dest)
 Node(row, col) - Factory
     children = []
     function getEligibleSquares
-        if row - 2 > 0
+        if row - 2 > 0 && col - 1 >= 0 children push 
         
 
     return
